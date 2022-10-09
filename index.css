@@ -361,13 +361,19 @@ button {
 
 @media (max-width: 428px) {
   .nav {
+    height: 40px;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .all {
+    height: 40px;
     width: 100vw;
+  }
+
+  .date {
+    height: 40px;
   }
 
   svg {
