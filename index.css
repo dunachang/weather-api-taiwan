@@ -278,17 +278,23 @@ button {
 
   .content {
     width: 90vw;
-    height: 100vh;
+    height: 85vh;
     justify-content: flex-start;
   }
 
   .taiwanmap {
     width: 70vw;
-    height: 75vh;
+    height: 80vh;
     /* background-color: #5B5B5B; */
     position: unset;
     /* float: left; */
     margin: auto;
+  }
+
+  svg {
+    height: 900px;
+    margin-left: 20px;
+    margin-top: 70px;
   }
 }
 
@@ -297,10 +303,6 @@ button {
     width: 85vw;
     height: 100vh;
     justify-content: flex-start;
-  }
-
-  .all {
-    width: 400px;
   }
 }
 
@@ -359,38 +361,46 @@ button {
 
 @media (max-width: 428px) {
   .nav {
+    width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .all {
+    width: 100vw;
   }
 
   svg {
     width: 428px;
     height: 375px;
-    margin-left: -55px;
+    margin-left: -90px;
     margin-top: 130px;
   }
 
   .taiwanmap {
     width: 75vw;
     height: 45vh;
+  }
+
+  .box {
+    margin: 20px;
   }
 }
 
 @media (max-width: 375px) {
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   svg {
     width: 375px;
     height: 375px;
-    margin-left: -55px;
+    margin-left: -75px;
     margin-top: 130px;
   }
 
   .taiwanmap {
     width: 75vw;
     height: 45vh;
+  }
+
+  .box {
+    margin: 15px;
   }
 }
