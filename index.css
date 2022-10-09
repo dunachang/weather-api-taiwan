@@ -400,6 +400,7 @@ button {
 
   .content {
     margin-top: 170px;
+    justify-content: center;
   }  
 }
 
