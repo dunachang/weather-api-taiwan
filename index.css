@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url('./img/02.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 96%;
+  height: 600px;
+  /* background-color: aliceblue; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+}
+
+.nav {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  /* margin-top: -630px; */
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #002C45;
+  opacity: 80%;
+}
+
+.all {
+  width: 550px;
+  height: 60px;
+  text-align: center;
+  /* margin-bottom: -30px; */
+  font-size: 30px;
+  font-family: '微軟正黑體';
+  border-radius: 30px;
+  /* background-color: white; */
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.date {
+  width: 180px;
+  height: 60px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.taiwanmap {
+  width: 40%;
+  height: 100%;
+  /* background-color: #5B5B5B; */
+  position: fixed;
+  /* float: left; */
+  margin: 60px 0 0 -20px;
+}
+
+svg {
+  height: 85vh;
+}
+
+path {
+  stroke: #5B5B5B;
+  /* fill: 台灣底色  */
+  fill: white;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+/* 滑鼠靠近台灣地圖的縣市變成藍色 */
+path:hover {
+  fill: #4682B4 !important;
+  transform: translate(-5px, -5px);
+}
+
+/* .pathcolor {
+  fill: #87CEFA !important;
+} */
+
+.content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  /* align-items: flex-start; */
+  align-content: flex-start;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  float: right;
+  /* margin-top: 40px; */
+}
+
+button {
+  background-color: unset;
+}
+
+.btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+/* .btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+} */
+
+.btn:hover {
+  cursor: pointer;
+  /* box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-1px); */
+}
+
+/* .btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+} */
+
+.box {
+  width: 150px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-radius: 15px 0;
+  box-shadow: 1px 10px 15px #303030;
+  margin: 25px;
+}
+
+.top {
+  width: 110px;
+  height: 125px;
+  background-color: whitesmoke;
+  border-radius: 15px 0 0 0;
+  font-family: 'Times New Roman', '微軟正黑體', Times, serif;
+  text-align: center;
+  color: #2B2B2B;
+  line-height: 65px;
+  margin: auto;
+  position: relative;
+}
+
+.down {
+  width: 150px;
+  height: 75px;
+  border-radius: 0 0 14px 0;
+  line-height: 15px;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 14px;
+}
+
+.taiwan {
+  color: white;
+}
+
+.north {
+  /* background-color: #8fd3f4; */
+  color: white;
+}
+
+.middle {
+  /* background-color: #fddb92; */
+  color: white;
+}
+
+.south {
+  /* background-color: #cfc7f8; */
+  color: white;
+}
+
+.east {
+  /* background-color: #feada6; */
+  color: white;
+}
+
+.outside {
+  /* background-color: #abecd6; */
+  color: white;
+}
+
+.grey {
+  background-color: lightblue;
+  /* background-image: linear-gradient(to bottom right, #8fd3f4, #fddb92, #cfc7f8, #feada6, #abecd6); */
+}
+
+#weather {
+  width: 70px;
+  height: 70px;
+  /* background-color: #868f96; */
+  position: absolute;
+  left: 48px;
+  bottom: 20px;
+  background-size: contain;
+  /* background-image: url(./img/rainy-1.png); */
+}
+
+/* .ghostwhite {
+  background-color: #F8F8FF;
+}
+
+.aliceblue {
+  background-color: #F0F8FF;
+}
+
+.azure {
+  background-color: #F0FFFF;
+}
+
+.lightcyan {
+  background-color: #E0FFFF;
+} */
+
+.white {
+  fill: white !important;
+}
+.blueTaiwan{
+  fill: #87CEFA !important;
+}
+
+
+
+@media (max-width: 1319px) {
+  .box {
+    width: 140px;
+    height: 200px;
+  }
+
+  .down {
+    width: 140px;
+    height: 75px;
+    border-radius: 0 0 14px 0;
+    line-height: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .content {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1188px) {
+  .content {
+    width: 40%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 989px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    width: 90vw;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .taiwanmap {
+    width: 70vw;
+    height: 75vh;
+    /* background-color: #5B5B5B; */
+    position: unset;
+    /* float: left; */
+    margin: auto;
+  }
+}
+
+@media (max-width: 844px) {
+  .content {
+    width: 85vw;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .all {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .taiwanmap {
+    width: 75vw;
+    height: 65vh;
+  }
+
+  svg {
+    height: 600px;
+    margin-left: -40px;
+    margin-top: 130px;
+  }
+
+  .content {
+    width: 80vw;
+    height: 100vh;
+    justify-content: flex-start;
+  }  
+
+  .date {
+    width: 150px;
+  }
+
+  .box {
+    width: 100px;
+    height: 150px;
+  }
+
+  .down {
+    width: 100px;
+    height: 65px;
+    border-radius: 0 0 14px 0;
+    line-height: 13px;
+    font-size: 12px;
+  }
+
+  .top {
+    width: 80px;
+    height: 85px;
+    line-height: 45px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  #weather {
+    width: 50px;
+    height: 50px;
+    left: 34px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  svg {
+    width: 375px;
+    height: 375px;
+    margin-left: -55px;
+    margin-top: 130px;
+  }
+
+  .taiwanmap {
+    width: 75vw;
+    height: 45vh;
+  }
+
+
+}
