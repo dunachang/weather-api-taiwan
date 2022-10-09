@@ -357,6 +357,25 @@ button {
   }
 }
 
+@media (max-width: 428px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  svg {
+    width: 428px;
+    height: 375px;
+    margin-left: -55px;
+    margin-top: 130px;
+  }
+
+  .taiwanmap {
+    width: 75vw;
+    height: 45vh;
+  }
+}
+
 @media (max-width: 375px) {
   .nav {
     flex-wrap: wrap;
@@ -374,6 +393,4 @@ button {
     width: 75vw;
     height: 45vh;
   }
-
-
 }
